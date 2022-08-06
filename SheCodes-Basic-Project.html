@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SheCodes Basic Final Project</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          109.6deg,
+          rgb(255, 221, 225) 11.2%,
+          rgb(255, 255, 255) 92.2%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        background-image: linear-gradient(
+          137.9deg,
+          rgb(78, 156, 226) 7.8%,
+          rgb(62, 146, 69) 16%,
+          rgb(251, 220, 23) 32.7%,
+          rgb(242, 159, 33) 50.4%,
+          rgb(253, 12, 12) 71.5%,
+          rgb(192, 26, 129) 83.1%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 5px;
+      }
+      p {
+        width: 700px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: normal;
+      }
+      a {
+        text-decoration: none;
+        color: #0000ff;
+        display: block;
+        text-align: center;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        background-color: #f29f21;
+        border: 1px solid #f29f21;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px
+          rgba(0, 0, 0, 0.3);
+        color: #f6f2fe;
+        display: block;
+        font-size: 18px;
+        margin: 30px auto;
+        padding: 20px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #f3f1f8;
+        color: #f29f21;
+        border: 1px solid #f29f21;
+        cursor: pointer;
+      }
+      .images {
+        text-align: center;
+        border-spacing: 5px;
+        margin-top: 20px;
+      }
+      .spice1 {
+        padding: 1px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 300px;
+      }
+      .spice2 {
+        padding: 1px;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-top: 27px;
+        width: 300px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Spices...Glorious, Fragrant Spices!</h1>
+    <h2>I love colourful Spices!</h2>
+    <hr />
+    <div class="images">
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/042/768/original/Spicec_3.jpg?1659695291"
+          alt="Spice1"
+          class="spice1"
+        />
+      </span>
+      <span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/042/779/original/Spice_23.png?1659697131"
+          alt="Spice2"
+          class="spice2"
+        />
+      </span>
+    </div>
+    <p>
+      A <strong>spice</strong> is a seed, fruit,
+      root, bark, or other plant substance
+      primarily used for
+      <em>flavoring or coloring food.</em>
+      Spices are sometimes used in medicine,
+      religious rituals, cosmetics or perfume
+      production. For example, vanilla is commonly
+      used as an ingredient in fragrance
+      manufacturing.
+    </p>
+    <p>
+      A spice may be available in several forms:
+      fresh, whole dried, or pre-ground dried.
+      Generally, spices are dried. Spices may be
+      ground into a powder for convenience. A
+      whole dried spice has the longest shelf
+      life, so it can be purchased and stored in
+      larger amounts, making it cheaper on a
+      per-serving basis.
+    </p>
+    <br />
+    <a
+      href="https://en.wikipedia.org/wiki/Spice"
+      target="_blank"
+      >Read More on Wikipedia</a
+    >
+    <br />
+    <button>Buy Spices Today</button>
+    <script>
+      function buyNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        if (name > "1" && email > "1") {
+          alert(
+            "Hi " +
+              name +
+              ", thank you for your interest in our spices, we'll be in touch. Meanwhile, tell us your favourite Spice! 😃"
+          );
+        } else {
+          alert("Sorry, no name, no Spices!");
+        }
+      }
+
+      let spiceButton =
+        document.querySelector("button");
+      spiceButton.addEventListener(
+        "click",
+        buyNow
+      );
+    </script>
+  </body>
+</html>
